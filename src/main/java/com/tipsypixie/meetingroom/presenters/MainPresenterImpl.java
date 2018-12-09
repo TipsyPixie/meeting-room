@@ -55,8 +55,6 @@ public class MainPresenterImpl implements MainPresenter {
     @Transactional(isolation = Isolation.SERIALIZABLE)
     public void addButtonClicked(MainView mainView) {
         try {
-            mainView.getAddButton().setEnabled(false);
-
             LocalDate selectedDate = Optional.ofNullable(mainView.getDateSelector().getValue())
                 .orElseThrow(() -> new ValueUnreachableException("invalid date value."));
 
@@ -119,8 +117,6 @@ public class MainPresenterImpl implements MainPresenter {
         } catch (Exception e) {
             logger.error(e.getMessage());
             showNotification("unknown error");
-        } finally {
-            mainView.getAddButton().setEnabled(true);
         }
     }
 
