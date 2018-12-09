@@ -1,7 +1,4 @@
-### DB data ###
-/postgresql
-
-### logs ###
+## logs ###
 /logs
 *.log
 

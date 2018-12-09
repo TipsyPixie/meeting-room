@@ -1,0 +1,19 @@
+version: '3'
+services:
+    db:
+        image: postgres
+        volumes:
+            - ./postgresql/data:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_PASSWORD=Ozymandias
+            - POSTGRES_DB=meeting_room
+        ports:
+            - 5432:5432 
+    app:
+        build: .
+        links:
+            - db
+        volumes:
+            - ./logs:/home/apps/meeting_room/logs
+        ports:
+            - 8080:8080
