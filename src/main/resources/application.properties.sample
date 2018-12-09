@@ -1,8 +1,0 @@
-spring.datasource.type=
-spring.datasource.url=
-spring.datasource.username=
-spring.datasource.password=
-
-spring.jpa.show-sql=
-spring.jpa.hibernate.ddl-auto=
-spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=

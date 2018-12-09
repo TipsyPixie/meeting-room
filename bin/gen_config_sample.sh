@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#! /usr/bin/env bash
 
 ROOT="$(dirname $0)/.."
 CONFIG_FILE="$ROOT/src/main/resources/application.properties"
