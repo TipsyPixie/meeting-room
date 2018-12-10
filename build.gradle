@@ -26,6 +26,10 @@ repositories {
 ext['springBootAdminVersion'] = '2.1.1'
 ext['vaadinVersion'] = '11.0.3'
 
+bootRun {
+    args = ["--spring.profiles.active=docker"]
+}
+
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
     implementation('org.springframework.boot:spring-boot-starter-web')

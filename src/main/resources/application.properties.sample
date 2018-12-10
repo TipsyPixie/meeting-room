@@ -1,0 +1,10 @@
+spring.datasource.type=
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=
+spring.jpa.database-platform=
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=
+server.port=
+vaadin.servlet.productionMode=
+logging.file=
