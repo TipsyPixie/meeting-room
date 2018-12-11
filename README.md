@@ -23,3 +23,4 @@
       ```bash
       $ tail -f ./logs/meeting_room.log
       ```
+   1. Open up web browser to connect `http://127.0.0.1:8080`
