@@ -83,7 +83,7 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 
         repetitionInput = new TextField("Repetition");
         repetitionInput.setPattern("^[0-9]*");
-        repetitionInput.setMaxLength(4);
+        repetitionInput.setMaxLength(1);
         repetitionInput.setRequired(true);
         repetitionInput.setPreventInvalidInput(true);
 

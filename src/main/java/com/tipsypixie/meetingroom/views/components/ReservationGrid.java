@@ -21,6 +21,7 @@ public class ReservationGrid extends VerticalLayout {
     public ReservationGrid(String labelContent) {
         this.labelContent = labelContent;
 
+
         init();
     }
 
